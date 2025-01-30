@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+  #container {
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
+    height: 100%;
+    padding: 10px;
+    position: relative;
+    /* background-color: red; */
+  }
+
+  #left {
+    width: 100%;
+    height: 100%;
+    /* background-color: green; */
+    grid-template-rows: 10% 65% 25%;
+    grid-template-columns: 50% 50%;
+    /* border: 2px solid aqua; */
+    padding: 20px;
+    margin-right: 0;
+    row-gap: 30px;
+  }
+
+  #nav,
+  #menu-text {
+    display: none;
+  }
+
+  #menu,
+  #content,
+  #comment {
+    grid-column: span 2;
+  }
+
+  #menu {
+    justify-items: end;
+  }
+
+  #logo {
+    width: 100%;
+  }
+
+  #menu-bar {
+    display: block;
+  }
+
+  #content {
+    font-weight: 400;
+    font-size: 10vw;
+    width: 100%;
+    display: grid;
+    letter-spacing: -2px;
+  }
+
+  #mod {
+    position: relative;
+  }
+
+  #mod::after {
+    position: absolute;
+    content: "";
+    top: 30%;
+    width: 50px;
+    height: 2px;
+    margin-left: 10px;
+    background-color: black;
+  }
+
+  #comment > p {
+    width: 70%;
+    font-size: 10px;
+  }
+
+  video {
+    width: 70vw;
+    height: 400px;
+  }
+
+  .swipe {
+    background-color: rgb(254, 130, 52);
+    width: 40px;
+    height: 40px;
+    color: white;
+    position: absolute;
+    border-radius: 50%;
+    top: 55%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+  }
+
+  .swipe > img {
+    width: 20px;
+    height: 20px;
+  }
+}

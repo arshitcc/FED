@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100%;
+  padding: 25px;
+  position: relative;
+}
+
+#left {
+  display: grid;
+  grid-template-rows: 10% 20% 60% 10%;
+  align-content: space-between;
+  margin-right: 30px;
+  padding: 40px;
+  row-gap: 10px;
+}
+
+#content {
+  font-weight: 400;
+  font-size: 5vw;
+  display: grid;
+  position: relative;
+  width: 80%;
+  letter-spacing: -5px;
+}
+
+#content > div:nth-child(even) {
+  justify-self: end;
+}
+
+#mod {
+  position: relative;
+}
+
+#mod::after {
+  position: absolute;
+  content: "";
+  top: 40%;
+  width: 50px;
+  height: 5px;
+  margin-left: 10px;
+  background-color: black;
+}
+
+#menu {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#logo {
+  width: 100%;
+  justify-self: start;
+}
+
+#square {
+  width: 20px;
+  height: 20px;
+  background: black;
+  rotate: 45deg;
+  justify-self: start;
+}
+
+#menu > div {
+  justify-self: end;
+}
+
+#menu-bar {
+  display: none;
+}
+
+#comment > p {
+  width: 60%;
+}
+
+#nav > nav {
+  list-style: none;
+  display: grid;
+  justify-items: end;
+}
+
+
+
+#comment {
+  display: grid;
+  align-items: end;
+  height: fit-content;
+}
+
+#right {
+  display: grid;
+  position: relative;
+  grid-template-columns: 90% 10%;
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
+}
+
+video {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#right > div {
+  align-self: start;
+}
+
+#search-icon {
+  display: grid;
+  justify-items: end;
+  text-align: justify;
+}
+
+.swipe {
+  background-color: rgb(254, 130, 52);
+  width: 80px;
+  height: 80px;
+  color: white;
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
