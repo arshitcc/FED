@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  /* background-color: red; */
+  height: 100%;
+}
+
+.section {
+  max-width: 85vw;
+  margin: 0 auto;
+  /* background-color: blue; */
+  height: 70%;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  justify-content: end;
+  align-items: center;
+  /* background-color: green; */
+  padding: 20px;
+  height: 20%;
+}
+
+.nav > li {
+  margin-right: 20px;
+}
+
+#menu {
+  display: none;
+}
+
+#menu > img {
+  height: 30px;
+  width: 30px;
+}
+
+#cart {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+#cart > img {
+  height: 30px;
+  width: 30px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 80%;
+  padding: 20px;
+}
+
+.left {
+  /* background-color: aqua; */
+  height: 100%;
+  display: grid;
+}
+
+.left > h1 {
+  font-size: 4.3vw;
+  font-weight: 500;
+  line-height: 1.02;
+}
+
+.left > h4 {
+  line-height: 1.02;
+  font-size: 1.3vw;
+  font-weight: 400;
+}
+
+.right {
+  /* background-color: purple; */
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.options {
+  list-style: none;
+  width: 50%;
+  display: grid;
+  /* background-color: greenyellow; */
+}
+
+.options > li {
+  padding: 10px 5px;
+  font-size: 1.3vw;
+  font-weight: 300;
+  border-top: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.options> li > img {
+    rotate: 180deg;
+    height: 18px;
+    width: 18px;
+    /* display: none; */
+    opacity: 0;
+}
+
+.options > li:hover {
+  font-weight: 450;
+  cursor: pointer;
+  text-decoration: underline;
+  background-color: #a89797;
+}
+
+.options > li:hover > img {
+    /* display: block; */
+    opacity: 1;
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* height: 40vh;
+  width: 100vw;
+  background-image: url(https://images.pexels.com/photos/30352190/pexels-photo-30352190/free-photo-of-traditional-braiding-of-woman-s-hair-outdoors.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load);
+  background-size: cover;
+  background-position: -25% 0%; */
+}
+
+.photo > img {
+  width: 100vw;
+}
