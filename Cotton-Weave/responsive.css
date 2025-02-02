@@ -1,0 +1,65 @@
+@media (max-width: 765px) {
+  .main {
+    max-width: 100vw;
+  }
+  .hero {
+    grid-template-columns: 100%;
+  }
+
+  .left {
+    height: 50vh;
+    grid-template-rows: 60% 40%;
+  }
+
+  .title {
+    font-size: 19vw;
+  }
+
+  .details {
+    grid-template-rows: 40% 60%;
+    padding: 10px;
+  }
+
+  .color {
+    width: 40vw;
+  }
+
+  .color-pick > li {
+    width: 2vw;
+    height: 2vw;
+  }
+
+  .text {
+    font-size: 3.5vw;
+  }
+
+  .right {
+    height: 100vh;
+    margin-top: 24px;
+  }
+
+  .item-title {
+    font-size: 8vw;
+    font-weight: 500;
+  }
+
+  .item-details {
+    grid-template-rows: 10% 90%;
+  }
+
+  .rating > img {
+    width: 2.5vw;
+    height: 2.5vw;
+  }
+  .item-tag{
+    grid-template-columns: 90% 10%;
+    padding: 0;
+  }
+
+  #add-to-bag {
+    font-size: 2.2vw;
+    font-weight: 400;
+    padding: 8vw 4vw;
+    right: 0;
+  }
+}
