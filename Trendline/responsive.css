@@ -1,0 +1,43 @@
+@media (max-width: 765px) {
+  .lang {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+
+  .options {
+    background-color: black;
+    color: white;
+    border-radius: 40px;
+    padding: 10px 20px;
+    overflow-x: auto;
+  }
+  .options::-webkit-scrollbar {
+    display: none;
+  }
+
+  *:focus {
+    outline: none !important;
+  }
+
+  .number {
+    justify-self: center;
+    align-self: center;
+    font-size: 10vw;
+  }
+
+  .title {
+    grid-template-rows: 50% 50%;
+    gap: 10px;
+  }
+
+  .title > h4 {
+    align-self: end;
+    font-size: 10vw;
+  }
+  .title > h1 {
+    align-self: start;
+    font-size: 10vw;
+  }
+}

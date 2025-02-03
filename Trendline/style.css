@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  height: 100vh;
+}
+
+.nav {
+  max-width: 90vw;
+  height: 20%;
+  margin: 0 auto;
+  list-style: none;
+  /* font-weight: 350; */
+  /* background-color: red; */
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: none;
+}
+
+.lang {
+  display: flex;
+}
+
+.lang > li {
+  margin-right: 20px;
+}
+
+.lang > li:nth-child(2) {
+  font-weight: 300;
+  color: gray;
+}
+
+.options {
+  display: flex;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.options > li {
+  padding-right: 30px;
+}
+
+.hero {
+  /* background-color: green; */
+  height: 80%;
+}
+
+.slide {
+  height: 50%;
+  position: relative;
+  /* background-color: blue; */
+
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+
+  /* display: grid;
+  grid-template-columns: 25% 50% 25%;
+  align-items: end; */
+
+  /* padding-top: 100px; */
+}
+
+.slide::-webkit-scrollbar {
+  background-color: transparent;
+  height: 5px;
+}
+.slide::-webkit-scrollbar-thumb {
+  background-color: orange;
+}
+
+.slide > div {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 20px;
+  scroll-snap-align: start;
+
+  /* background-color: pink; */
+  /* border: 2px dotted red; */
+  /* overflow: hidden; */
+}
+
+.number {
+  justify-self: end;
+  display: grid;
+  justify-items: center;
+  font-size: 2vw;
+}
+
+.title {
+  display: grid;
+  grid-template-rows: 15% 85%;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.title > h4 {
+  font-size: 2vw;
+  font-weight: 350;
+  align-self: self-start;
+}
+
+.title > h1 {
+  font-size: 6vw;
+  font-weight: 400;
+}
+
+.slide-image {
+  height: 50%;
+  /* background-color: yellow; */
+  position: relative;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.slide-image::-webkit-scrollbar {
+  display: none;
+}
+
+.slide-image > img {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  scroll-snap-align: start;
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controls > img {
+  width: 30px;
+  height: 30px;
+}
+
+.controls > img:nth-child(2) {
+  rotate: 180deg;
+}
