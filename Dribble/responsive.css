@@ -1,0 +1,204 @@
+@media (max-width: 765px) {
+  .navbar-option,
+  #navbar-option,
+  #signup {
+    display: none;
+  }
+  #menubar {
+    display: block;
+  }
+
+  #logo svg {
+    width: 90px;
+    height: 25px;
+  }
+
+  .nav {
+    padding: 2.4vw 4vw;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #login {
+    padding: 3.2vw 6.5vw;
+    font-size: 3.5vw;
+    font-weight: 600;
+  }
+
+  .discover {
+    max-width: 100vw;
+    padding: 15vw 5vw;
+    gap: 10vw;
+  }
+
+  .discover h1 {
+    font-size: 8vw;
+    letter-spacing: 0;
+  }
+
+  .discover h2 {
+    width: 100%;
+    font-size: 3.8vw;
+    font-weight: 455;
+    text-align: center;
+  }
+
+  .discover-search {
+    max-width: 100vw;
+    width: 100%;
+  }
+
+  .search {
+    padding: 2.5vw 2vw;
+  }
+
+  .search input {
+    width: 50%;
+  }
+
+  .search select {
+    width: 25%;
+  }
+
+  .discover-tags,
+  .discover-tags ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .discover-tags li {
+    font-size: 3vw;
+  }
+
+  .reviewer {
+    height: 250px;
+    width: 200px;
+  }
+
+  .reviewer .video {
+    display: none;
+  }
+
+  .reviewer-data {
+    border-radius: 40px;
+    width: 100%;
+    /* border: 1px solid black; */
+    align-items: center;
+  }
+
+  .reviewer-data h1 {
+    font-size: 4.5vw;
+    font-weight: 700;
+  }
+
+  .reviewer-data > ul {
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+  }
+
+  .reviewer-data > ul > li {
+    font-size: 2.8vw;
+    font-weight: 500;
+    background-color: transparent;
+    border: 1px solid rgb(192, 182, 182);
+    padding: 5px 10px;
+    border-radius: 40px;
+  }
+
+  .reviewer:hover video {
+    display: none;
+  }
+
+  .reviewer:hover img {
+    display: block;
+  }
+
+  .filter {
+    display: none;
+  }
+
+  .responsive-filter {
+    padding: 8px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    list-style: none;
+    width: 100%;
+  }
+
+  .resp-filter-top {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+  }
+
+  .categories {
+    white-space: nowrap;
+    overflow: hidden;
+    overflow-x: auto;
+    display: flex;
+    gap: 10px;
+    padding: 2vw;
+  }
+
+  .designs {
+    max-width: 95vw;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10vw;
+  }
+
+  .design-data {
+    font-size: 4.5vw;
+  }
+
+  .design-data span {
+    font-size: 2.5vw;
+  }
+
+  .creator-name h4 {
+    font-size: 4vw;
+  }
+
+  .signup {
+    padding: 20vw 0;
+  }
+
+  .signup button {
+    padding: 2.5vw 4vw;
+    font-weight: 600;
+  }
+
+  .categories-sub {
+    gap: 10vw;
+  }
+
+  .category {
+    width: 70vw;
+    height: 80vw;
+  }
+
+  .footer {
+    max-width: 90vw;
+  }
+
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10vw;
+  }
+
+  .links {
+    font-size: 4vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-weight: 600;
+    gap: 15px;
+  }
+}
